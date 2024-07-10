@@ -1,0 +1,258 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  object-fit: cover;
+}
+
+.username {
+  font-weight: bold;
+  color: white; 
+}
+
+
+
+.sidebar{
+  min-width: 220px;
+  width: 100%;
+}
+@media(max-width: 768px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    }
+
+    .dropdown:hover .dropdown-toggle {
+    color: white;
+    }
+    
+      /* For the sidebar items */
+      .AppSidebarGroupsItems {
+    list-style-type: none;
+    padding-left: 0;
+    }
+    .AppSidebarGroupsItems_title {
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-weight: bold;  /* This makes the text bold */
+    }
+
+    .AppSidebarGroupsItems_item {
+    list-style-type: none;
+    }
+    .AppSidebarGroupsItems_item a {
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        text-decoration: none;
+        color: black;
+    }
+    .AppSidebarGroupsItems_item_categoryIcon {
+        margin-right: 10px;
+    }
+
+    .AppSidebarGroupsItems_item_categoryTitle{
+        font-size: 16px;
+    }
+    .AppSidebarGroupsItems_item_badge {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        padding: 2px 8px;
+        font-size: 12px;
+        color: #333;
+        margin-left: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-section {
+    background-color: #1e2229;
+    color: #ffffff;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  .AppSidebarGroupsItems_section_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .AppSidebarGroupsItems_section_header h5 {
+    font-size: 18px;
+    margin-top: 18px;
+    font-weight: bold;
+  }
+  
+  .add-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    opacity: 1;
+  }
+
+
+  .list-items, .tag-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-items li, .tag-items li {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  .item-count {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .list-items li:first-child {
+    color: #4a90e2;
+  }
+  
+  .tag-items li {
+    color: #e9c46a;
+  }
+
+
+
+
+  body {
+    background-color: #0066ff;
+  }
+  
+  .card {
+    background-color: #222;
+    border: none;
+  }
+  
+  .btn-outline-light {
+    border-color: #444;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #333;
+  }
+
+  .card-title {
+    font-size: 1.25rem; /* Equivalent to h5 size */
+    font-weight: bold;
+  }
+  
+  .card-title .today {
+    color: white;
+  }
+  
+  .card-title .day {
+    color: #a0a0a0; /* Adjust this color to get the desired dull light shade */
+    font-weight: normal;
+  }
+
+
+
+
+
+  .site-footer {
+    background-color: #26272b;
+    margin-top: 200px;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section {
+    width: 25%;
+    padding: 0 15px;
+  }
+  
+  .footer-section h3 {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 2px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #737373;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #3366cc;
+  }
+  
+  .social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33353d;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #ffffff;
+  }
+  
+  .footer-bottom {
+    background-color: #1f2022;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .footer-section {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-section {
+      width: 100%;
+    }
+  }

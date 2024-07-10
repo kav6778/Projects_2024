@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily.do</title>
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel ="shortcut icon" href = "/favicon.ico">
+    <link rel ="manifest" href="/manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="https://kit.fontawesome.com/80a44cc02a.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<header>
+    <div class = "row align-items-center bg-dark text-white" style="height: 80px;">
+        <div class="col r ms-4 ms-md-5 ms-sm-2 user-profile">
+            <img src="https://img.logoipsum.com/300.svg" alt="Profile Picture" class="profile-pic" style="width: 40px; height: 40px; border-radius: 50%;">
+            <span class="username ms-2"></span>
+        </div>
+        <div class="col d-flex justify-content-end pe-4 mb-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class = "navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                At a Glance
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Platform
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Industries
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                        <!-- <li class = "list-inline-item"><a class = "me-4 text- text-decoration-none" href="">Services</a> </li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <body>
+        <div class = "container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-2 mt-2 bg-body-secondary sidebar">
+                    <nav class="AppSidebar">
+                        <ul class="AppSidebarGroupsItems">
+                            <li class="AppSidebarGroupsItems_item">
+                                <a role="button" href="/tasks/next-seven-days">
+                                    <!-- <div hidden class="AppSidebarGroupsItems_item_handlerContainer"></div> -->
+                                    <div class="AppSidebarGroupsItems_item_categoryIcon">
+                                        <i class="fa-regular fa-dot-circle"></i>
+                                        <!-- <i class="fa-regular fa-calendar-days"></i> -->
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_categoryTitle">
+                                        <div class="AppSidebarGroupsItems_item_categoryTitleWrapper">
+                                            My day
+                                        </div>
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_badge">3</div>
+                                </a>
+                                <div hidden class="AppSidebarGroupItems_item_icons"></div>
+                            </li>
+                            <li class="AppSidebarGroupsItems_item">
+                                <a role="button" href="/tasks/next-seven-days">
+                                    <!-- <div hidden class="AppSidebarGroupsItems_item_handlerContainer"></div> -->
+                                    <div class="AppSidebarGroupsItems_item_categoryIcon">
+                                        <!-- <i class="fa-regular fa-dot-circle"></i> -->
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_categoryTitle">
+                                        <div class="AppSidebarGroupsItems_item_categoryTitleWrapper">
+                                            Next 7 days
+                                        </div>
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_badge">2</div>
+                                </a>
+                                <div hidden class="AppSidebarGroupItems_item_icons"></div>
+                            </li>
+                            <li class="AppSidebarGroupsItems_item">
+                                <a role="button" href="/tasks/next-seven-days">
+                                    <!-- <div hidden class="AppSidebarGroupsItems_item_handlerContainer"></div> -->
+                                    <div class="AppSidebarGroupsItems_item_categoryIcon">
+                                        <!-- <i class="fa-regular fa-dot-circle"></i> -->
+                                        <!-- <i class="fa-regular fa-calendar-days"></i> -->
+                                        <i class="fa-solid fa-list-check"></i>
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_categoryTitle">
+                                        <div class="AppSidebarGroupsItems_item_categoryTitleWrapper">
+                                            All my tasks
+                                        </div>
+                                    </div>
+                                    <div class="AppSidebarGroupsItems_item_badge">5</div>
+                                </a>
+                                <div hidden class="AppSidebarGroupItems_item_icons"></div>
+                            </li>
+                        </ul>
+                        <!-- <span class="AppSidebarGroupsItems_title">
+                        My list</span> -->
+                        <ul class="AppSidebarGroupsItems">
+                            <div class="AppSidebarGroupsItems_section_header">
+                                <h5>My lists <i class="fas fa-lock"></i></h5>
+                                <button class="add-button">+</button>
+                            </div>
+                            <ul class="AppSidebarGroupsItems">
+                                <li class="AppSidebarGroupsItems_item"><a href="/personal">Personal 
+                                    <span class="AppSidebarGroupsItems_item_badge">4</span></a></li>
+                                <li class="AppSidebarGroupsItems_item"><a href="/work">Work</a></li>
+                                <li class="AppSidebarGroupsItems_item"><a href="/grocery">Grocery List</a></li>
+                            </ul>
+                            <div class="AppSidebarGroupsItems_section_header">
+                                <h5>Tags</h5>
+                                <button class="add-button">+</button>
+                            </div>
+                            <ul class="AppSidebarGroupsItems">
+                                <li class="AppSidebarGroupsItems_item"><a href="/tag/priority">#priority</a></li>
+                            </ul>
+                        </ul>
+                        </ul>
+                    </div>
+                <div class="col-12 col-sm-8 col-md-10 mt-2">
+                    <div class="row">
+                        <div class=" col-md-3 ms-3 mb-3 text-white rounded-5 d-flex align-items-center" style="max-width: 250px; background-color: #161616;">
+                            <div class="AppSidebarGroupsItems_item_categoryIcon">
+                                <!-- <i class="fa-regular fa-dot-circle"></i> -->
+                                <i class="fa-regular fa-calendar-days ms-2"></i>
+                            </div>
+                            <h5 style="padding-top: 10px;" >Next 7 days</h5>
+                            
+                        </div>
+                    </div>
+                    <div class ="row g-4">
+                        <div class="col-12 col-sm-6 col-md-4 col-md-lg-4">
+                            <div class="card text-white rounded-4" style=" background-color: #161616;">
+                                <div class = "card-body">
+                                    <!-- <h5 class ="card-title pb-2">Today Monday</h5> -->
+                                    <div class="card-title pb-2 d-flex align-items-baseline flex-wrap">
+                                        <div class="today me-2">Today</div>
+                                        <div class="day">Tuesday</div>                                      </div>
+
+
+                                    <div class="container mt-4">                                       
+                                        <div class="col-md-12">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control taskInput" placeholder="Enter a new task">
+                                                <button class="btn btn-dark addTaskButton" type="button">+ Add Task</button>
+                                            </div>
+                                            <div class="taskList"></div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-md-lg-4">
+                            <div class="card text-white rounded-4" style=" background-color: #161616;">
+                                <div class = "card-body">
+                                    <!-- <h5 class ="card-title">Tuesday</h5> -->
+                                    <div class="card-title pb-2 d-flex align-items-baseline flex-wrap">
+                                        <div class="today me-2">Tomorrow</div>
+                                        <div class="day">Wednesday</div>
+                                      </div>
+                                      <div class="container mt-4">   
+                                         <!--New task button  -->
+                                         <div class="col-md-12">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control taskInput" placeholder="Enter a new task">
+                                                <button class="btn btn-dark addTaskButton" type="button">+ Add Task</button>
+                                            </div>
+                                            <div class="taskList"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Sample card -->
+                                      <div class ="card-body-task rounded-3">
+                                        <ul class="list-unstyled rounded-3 my-3" style="background-color:rgba(66,66,66,.8);">
+                                            <li class="md-3 mx-3 my-3">
+                                                <small class="text-white-50">My lists > Personal</small>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <input type="radio" class="me-2">
+                                                        <span class="text-white">Go To Gym</span>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-link text-white" type="button" id="dropdownMenuButton-${task.id}" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-${task.id}">
+                                                            <li><a class="dropdown-item edit-task" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item delete-task" href="#">Delete</a></li>
+                                                            <li><a class="dropdown-item change-category" href="#">Change Category</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- sample Card -->
+                                    <div class ="card-body-task rounded-3">
+                                        <ul class="list-unstyled rounded-3 my-3" style="background-color:rgba(66,66,66,.8);">
+                                            <li class="md-3 mx-3 my-3">
+                                                <small class="text-white-50">My lists > Personal</small>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <input type="radio" class="me-2">
+                                                        <span class="text-white">Break fast</span>
+                                                    </div>
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-link text-white" type="button" id="dropdownMenuButton-${task.id}" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton-${task.id}">
+                                                            <li><a class="dropdown-item edit-task" href="#">Edit</a></li>
+                                                            <li><a class="dropdown-item delete-task" href="#">Delete</a></li>
+                                                            <li><a class="dropdown-item change-category" href="#">Change Category</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-md-lg-4">
+                            <div class="card text-white rounded-4" style=" background-color: #161616;">
+                                <div class = "card-body">
+                                    <!-- <h5 class ="card-title pb-2">Today Monday</h5> -->
+                                    <div class="card-title pb-2 d-flex align-items-baseline">
+                                        <!-- <div class="today me-2">Today</div> -->
+                                        <div class="day">Thursday</div>                                      </div>
+
+
+                                    <div class="container mt-4">                                       
+                                        <div class="col-md-12">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control taskInput" placeholder="Enter a new task">
+                                                <button class="btn btn-dark addTaskButton" type="button">+ Add Task</button>
+                                            </div>
+                                            <div class="taskList"></div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="site-footer">
+            <div class="footer-content">
+                    <div class="footer-section about">
+                        <h3>About Us</h3>
+                        <p>To-do: Your digital todo list. Organize, prioritize, and accomplish more. Simple, efficient task management for everyone.</p>
+                      </div>
+              <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+              </div>
+              <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2024 Kavin-To-Do. All rights reserved.</p>
+            </div>
+          </footer>
+        <script src="taskManager.js"></script>
+    </body>
+</html>
